@@ -1,0 +1,180 @@
+[
+  {
+    "id": "missing-country",
+    "mode": "workflow",
+    "turns": ["What income tax rules applied in 2025?"],
+    "status": "needs_clarification",
+    "scopes": [],
+    "answer_contains": "Which country"
+  },
+  {
+    "id": "missing-year",
+    "mode": "workflow",
+    "turns": ["What income tax rules apply in Canada?"],
+    "status": "needs_clarification",
+    "scopes": [],
+    "answer_contains": "Which policy year"
+  },
+  {
+    "id": "clarification-restores-context",
+    "mode": "workflow",
+    "turns": [
+      "I earn 80,000 a year. What would my tax situation be in 2025?",
+      "Canada"
+    ],
+    "status": "answered",
+    "scopes": [["Canada", 2025]],
+    "numeric_values": ["80000"],
+    "pages": { "canada-2025": [31, 32, 35, 36, 37, 38] }
+  },
+  {
+    "id": "uk-employment-tax",
+    "mode": "workflow",
+    "turns": [
+      "What employment income tax rules are described for the United Kingdom in 2025?"
+    ],
+    "status": "answered",
+    "scopes": [["United Kingdom", 2025]],
+    "pages": { "united-kingdom-2025": [23, 24] }
+  },
+  {
+    "id": "canada-comparison",
+    "mode": "workflow",
+    "turns": [
+      "What changed in Canada's federal income tax treatment between 2024 and 2025?"
+    ],
+    "status": "answered",
+    "scopes": [
+      ["Canada", 2024],
+      ["Canada", 2025]
+    ],
+    "pages": {
+      "canada-2024": [33, 34, 35, 36],
+      "canada-2025": [35, 36, 37, 38]
+    }
+  },
+  {
+    "id": "country-comparison",
+    "mode": "retrieval",
+    "turns": [
+      "Compare child benefit eligibility in Canada and Germany in 2025."
+    ],
+    "scopes": [
+      ["Canada", 2025],
+      ["Germany", 2025]
+    ],
+    "pages": { "canada-2025": [17, 18, 19], "germany-2025": [19, 20] }
+  },
+  {
+    "id": "australia-2024",
+    "mode": "retrieval",
+    "turns": ["What is Family Tax Benefit in Australia in 2024?"],
+    "scopes": [["Australia", 2024]],
+    "pages": { "australia-2024": [16, 17, 18, 19] }
+  },
+  {
+    "id": "australia-2025",
+    "mode": "retrieval",
+    "turns": [
+      "What personal income tax rates are listed for Australia in 2025?"
+    ],
+    "scopes": [["Australia", 2025]],
+    "pages": { "australia-2025": [32, 33] }
+  },
+  {
+    "id": "canada-2024",
+    "mode": "retrieval",
+    "turns": ["What is the Canada Child Benefit in Canada in 2024?"],
+    "scopes": [["Canada", 2024]],
+    "pages": { "canada-2024": [16, 17, 18] }
+  },
+  {
+    "id": "canada-2025",
+    "mode": "retrieval",
+    "turns": [
+      "What are the Canada Child Benefit eligibility conditions in 2025?"
+    ],
+    "scopes": [["Canada", 2025]],
+    "pages": { "canada-2025": [17, 18, 19] }
+  },
+  {
+    "id": "germany-2024",
+    "mode": "retrieval",
+    "turns": ["Who can receive Kindergeld in Germany in 2024?"],
+    "scopes": [["Germany", 2024]],
+    "pages": { "germany-2024": [18, 19] }
+  },
+  {
+    "id": "germany-2025",
+    "mode": "retrieval",
+    "turns": ["What is the monthly Kindergeld amount in Germany in 2025?"],
+    "scopes": [["Germany", 2025]],
+    "pages": { "germany-2025": [19, 20] }
+  },
+  {
+    "id": "uk-2024",
+    "mode": "retrieval",
+    "turns": ["What is Universal Credit in the United Kingdom in 2024?"],
+    "scopes": [["United Kingdom", 2024]],
+    "pages": { "united-kingdom-2024": [9, 10, 11, 12, 13, 14, 15] }
+  },
+  {
+    "id": "us-2024",
+    "mode": "retrieval",
+    "turns": ["Who qualifies for SNAP in the United States in 2024?"],
+    "scopes": [["United States", 2024]],
+    "pages": { "united-states-2024": [10, 11, 12, 13] }
+  },
+  {
+    "id": "us-2025-exact-term",
+    "mode": "retrieval",
+    "turns": [
+      "Who qualifies for Supplemental Nutrition Assistance Program (SNAP) in the United States in 2025?"
+    ],
+    "scopes": [["United States", 2025]],
+    "pages": { "united-states-2025": [10, 11, 12, 13] },
+    "method": "bm25"
+  },
+  {
+    "id": "semantic-job-loss",
+    "mode": "retrieval",
+    "turns": [
+      "What support can replace lost earnings after losing a job involuntarily in Canada in 2025?"
+    ],
+    "scopes": [["Canada", 2025]],
+    "pages": { "canada-2025": [5, 6, 7, 8, 9] },
+    "method": "dense"
+  },
+  {
+    "id": "unsupported-visa",
+    "mode": "workflow",
+    "turns": ["What are the visa application requirements for Canada in 2025?"],
+    "status": "insufficient_evidence",
+    "scopes": [["Canada", 2025]]
+  },
+  {
+    "id": "wrong-year",
+    "mode": "workflow",
+    "turns": ["What are Canada's income tax brackets for 2030?"],
+    "status": "insufficient_evidence",
+    "scopes": [["Canada", 2030]]
+  },
+  {
+    "id": "deterministic-contribution",
+    "mode": "workflow",
+    "turns": [
+      "Calculate my annual employee Employment Insurance premium in Canada in 2025. I am an employee outside Quebec with annual insurable earnings of CAD 80,000."
+    ],
+    "status": "answered",
+    "scopes": [["Canada", 2025]],
+    "pages": { "canada-2025": [12, 32, 33] },
+    "answer_contains": "Calculated in Python"
+  },
+  {
+    "id": "insufficient-personal-details",
+    "mode": "workflow",
+    "turns": ["What is my exact total income tax liability in Canada in 2025?"],
+    "status": "insufficient_evidence",
+    "scopes": [["Canada", 2025]]
+  }
+]
