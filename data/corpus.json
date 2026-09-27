@@ -1,0 +1,117 @@
+[
+  {
+    "document_id": "australia-2024",
+    "document_name": "Australia TaxBEN 2024",
+    "country": "Australia",
+    "policy_year": 2024,
+    "filename": "australia-2024.pdf",
+    "source": "https://webfs.oecd.org/Els-com/Tax%20Ben/documents%20for%20all%20years/Australia.zip",
+    "sha256": "765d85698e9ce526f9357c2cee44356879a7721491943fa80d0ace27e0869222",
+    "pages": 39,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR AUSTRALIA 2024 \u00a9 OECD 2024 Unclassified - Non classifi\u00e9 OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Australia 2024 PUBE",
+    "archive_member": "Australia/Australia_2024.pdf"
+  },
+  {
+    "document_id": "australia-2025",
+    "document_name": "Australia TaxBEN 2025",
+    "country": "Australia",
+    "policy_year": 2025,
+    "filename": "australia-2025.pdf",
+    "source": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/income-support-redistribution-and-work-incentives/TaxBEN-Australia-latest.pdf",
+    "sha256": "5a99ece67ad024c5cdf76b353ee08342e07363ba242ec9add7211313306e5cda",
+    "pages": 39,
+    "year_evidence": "\uf07c\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR AUSTRALIA 2025 \u00a9 OECD 2025 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Australia 2025 PUBE"
+  },
+  {
+    "document_id": "canada-2024",
+    "document_name": "Canada TaxBEN 2024",
+    "country": "Canada",
+    "policy_year": 2024,
+    "filename": "canada-2024.pdf",
+    "source": "https://webfs.oecd.org/Els-com/Tax%20Ben/documents%20for%20all%20years/Canada.zip",
+    "sha256": "78b5b767961b8e91cbbd22d685a100779cdc99230a85ecff4234dcc6cce1d2c0",
+    "pages": 42,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR CANADA 2024 \u00a9 OECD 2025 Unclassified - Non classifi\u00e9 OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Canada 2024",
+    "archive_member": "Canada/Canada_2024.pdf"
+  },
+  {
+    "document_id": "canada-2025",
+    "document_name": "Canada TaxBEN 2025",
+    "country": "Canada",
+    "policy_year": 2025,
+    "filename": "canada-2025.pdf",
+    "source": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/income-support-redistribution-and-work-incentives/TaxBEN-Canada-latest.pdf",
+    "sha256": "b777bb2ae68d3274d856acd7176e37856e2f0475bcec310e9369ce6bcb09f414",
+    "pages": 44,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR CANADA 2025 \u00a9 OECD 2025 OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Canada 2025"
+  },
+  {
+    "document_id": "germany-2024",
+    "document_name": "Germany TaxBEN 2024",
+    "country": "Germany",
+    "policy_year": 2024,
+    "filename": "germany-2024.pdf",
+    "source": "https://webfs.oecd.org/Els-com/Tax%20Ben/documents%20for%20all%20years/Germany.zip",
+    "sha256": "8f6f16aef7b371f0f064a8eef95d58b86b3ccb953f184fef0570586d04a4826b",
+    "pages": 36,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR GERMANY 2024 \u00a9 OECD 2024 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Germany 2024 PUBE",
+    "archive_member": "Germany/Germany_2024.pdf"
+  },
+  {
+    "document_id": "germany-2025",
+    "document_name": "Germany TaxBEN 2025",
+    "country": "Germany",
+    "policy_year": 2025,
+    "filename": "germany-2025.pdf",
+    "source": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/income-support-redistribution-and-work-incentives/TaxBEN-Germany-latest.pdf",
+    "sha256": "d4844b608bc32daf1713d79d0e144be61b994a09f90664429228641945b3d13a",
+    "pages": 37,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR GERMANY 2025 \u00a9 OECD 2026 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for Germany 2025 PUBE"
+  },
+  {
+    "document_id": "united-kingdom-2024",
+    "document_name": "United Kingdom TaxBEN 2024",
+    "country": "United Kingdom",
+    "policy_year": 2024,
+    "filename": "united-kingdom-2024.pdf",
+    "source": "https://webfs.oecd.org/Els-com/Tax%20Ben/documents%20for%20all%20years/United_Kingdom.zip",
+    "sha256": "586b355c658fde9d7ac015b98e3d14e6c0c1162b6e67818607258af7fbe7c02c",
+    "pages": 28,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR THE UNITED KINGDOM 2024 \u00a9 OECD 2025 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for the United Kingdom 2024 PUBE",
+    "archive_member": "United_Kingdom/United_Kingdom_2024.pdf"
+  },
+  {
+    "document_id": "united-kingdom-2025",
+    "document_name": "United Kingdom TaxBEN 2025",
+    "country": "United Kingdom",
+    "policy_year": 2025,
+    "filename": "united-kingdom-2025.pdf",
+    "source": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/income-support-redistribution-and-work-incentives/TaxBEN-United_Kingdom-latest.pdf",
+    "sha256": "d66d521e72c791bde6a26480c2bd76e0dfc2225f668973d733fe6ae353bf4c5a",
+    "pages": 27,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR THE UNITED KINGDOM 2025 \u00a9 OECD 2025 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for the United Kingdom 2025 PUBE"
+  },
+  {
+    "document_id": "united-states-2024",
+    "document_name": "United States TaxBEN 2024",
+    "country": "United States",
+    "policy_year": 2024,
+    "filename": "united-states-2024.pdf",
+    "source": "https://webfs.oecd.org/Els-com/Tax%20Ben/documents%20for%20all%20years/United_States.zip",
+    "sha256": "9fe525af01d8b4ad6a51364b38625c50ae34dd670e714a1a7a314570df9282fb",
+    "pages": 35,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR THE UNITED STATES 2024 \u00a9 OECD 2024 Restricted Use - \u00c0 usage restreint OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for the United States 2024 PUBE",
+    "archive_member": "United_States/United_States_2024.pdf"
+  },
+  {
+    "document_id": "united-states-2025",
+    "document_name": "United States TaxBEN 2025",
+    "country": "United States",
+    "policy_year": 2025,
+    "filename": "united-states-2025.pdf",
+    "source": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/income-support-redistribution-and-work-incentives/TaxBEN-United_States-latest.pdf",
+    "sha256": "a0c423198f9acfdfb80996009f1b23e2531eb36e6b1ffd74bb0c1668d377fa53",
+    "pages": 36,
+    "year_evidence": "\uf07c 1 TAX AND BENEFIT POLICY DESCRIPTIONS FOR THE UNITED STATES 2025 \u00a9 OECD 2026 Restricted Use - \u00c0 usage restreint 33333 OECD descriptions of tax and benefit systems Tax and benefit policy descriptions for the United States 2025 PUBE"
+  }
+]
