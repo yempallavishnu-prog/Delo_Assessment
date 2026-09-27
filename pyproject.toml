@@ -1,0 +1,32 @@
+[project]
+name = "policy-rag"
+version = "0.1.0"
+description = "Metadata-constrained retrieval over OECD tax and benefit policies"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "uvicorn>=0.34,<1",
+    "jinja2>=3.1.6,<4",
+    "pymupdf>=1.25,<2",
+    "langgraph>=1,<2",
+    "langgraph-checkpoint-sqlite>=3,<4",
+    "ollama>=0.6,<1",
+    "sentence-transformers>=5,<6",
+    "faiss-cpu>=1.10,<2",
+    "rank-bm25==0.2.2",
+    "pydantic-settings>=2.8,<3",
+    "httpx>=0.28,<1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
