@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Policy search</title>
+    <link rel="stylesheet" href="/static/app.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Policy search</h1>
+        <p class="muted">
+          OECD TaxBEN · {{ years | join('–') }} · {{ documents | length }}
+          documents
+        </p>
+      </div>
+      <button id="new-session" type="button">New conversation</button>
+    </header>
+    <div class="workspace">
+      <main>
+        {% if not ready %}
+        <p class="notice" role="status">
+          The index is unavailable. Run <code>python -m app.ingestion</code>,
+          then restart the server.
+        </p>
+        {% endif %}
+        <form id="question-form">
+          <label for="question">Your question</label>
+          <textarea
+            id="question"
+            name="message"
+            rows="3"
+            maxlength="2000"
+            required
+            placeholder="Ask about a tax or benefit. Include a country and year."
+          ></textarea>
+          <div class="form-actions">
+            <span id="activity" class="muted" role="status">
+              Missing details can be clarified in your next reply.
+            </span>
+            <button id="submit" type="submit">Ask</button>
+          </div>
+        </form>
+        <p id="welcome" class="examples">
+          Try:
+          <button
+            type="button"
+            class="example"
+            data-question="What income tax rules applied in Canada in 2025?"
+          >
+            Canada income tax
+          </button>
+          <button
+            type="button"
+            class="example"
+            data-question="What changed in Canada's tax treatment between 2024 and 2025?"
+          >
+            Compare 2024 and 2025
+          </button>
+        </p>
+        <section
+          id="conversation"
+          aria-label="Conversation"
+          aria-live="polite"
+          aria-relevant="additions"
+        ></section>
+        <p class="muted footnote">
+          Answers describe the source rules, not your complete personal tax
+          liability.
+        </p>
+      </main>
+      <aside aria-label="Sources and scope">
+        <section>
+          <h2>Scope</h2>
+          <div id="scope">
+            <p class="muted">No country or year selected.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Sources</h2>
+          <div id="sources">
+            <p class="muted">Sources appear after a search.</p>
+          </div>
+        </section>
+        <details id="diagnostics">
+          <summary>Retrieval details</summary>
+          <div id="diagnostic-content"><p class="muted">No search yet.</p></div>
+        </details>
+        <details>
+          <summary>Available countries</summary>
+          <p class="muted">{{ countries | join(', ') }}.</p>
+        </details>
+      </aside>
+    </div>
+  </body>
+</html>
